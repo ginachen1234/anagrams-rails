@@ -1,25 +1,25 @@
 class User < ApplicationRecord
 
 
-  # def self.my_method
+  def self.my_method
 
 
-  #   # my_array = []
-
-  #   # file = File.join(Rails.root, 'app','assets', 'files', 'test_list.txt')
-  #   # File.open(file).each do  |line|
+    my_array = []
 
 
-  #   my_array << line.gsub!(/\n?/, "")
+    file = File.join(Rails.root, 'app' 'models','assets', 'files', 'test_list.txt')
+    File.open.each do  |line|
+
+    my_array << line.gsub!(/\n?/, "")
 
 
 
+    end
 
-    # end
+    return my_array.to_s
 
-    # return my_array.to_s
-
-    # end
+    end
 
 
 end
+

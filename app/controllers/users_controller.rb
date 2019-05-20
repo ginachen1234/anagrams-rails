@@ -4,9 +4,9 @@ class UsersController < ApplicationController
   require 'net/http'
 
 
-
-
   def show
+
+
     uri = URI('https://gist.githubusercontent.com/Kalagan/3b26be21cbf65b62cf05ab549433314e/raw')
       data = Net::HTTP.get(uri)
       anagrams = data.split(/\n/)
@@ -25,3 +25,5 @@ class UsersController < ApplicationController
 
 
 end
+
+
